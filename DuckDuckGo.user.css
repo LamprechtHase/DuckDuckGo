@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name DuckDuckGo
+@namespace https://github.com/LamprechtHase
+@version 0.0.1
+@description some small modifications to duckduckgo
+@author Lamprecht Hase
+@homepageURL https://github.com/LamprechtHase/DuckDuckGo
+@supportURL https://github.com/LamprechtHase/DuckDuckGo/issues
+@license CC0-1.0
+@advanced color hyperlink-color "Hyperlink color" #ffbb00
+@advanced color hyperlink-color-visited "Hyperlink color visited" #9900ff
+==/UserStyle== */
+@-moz-document domain("duckduckgo.com")
+{
+	a { color: #ffbb00 !important; }
+	a { color: /*[[hyperlink-color]]*/ !important; }
+	a:visited { color: #9900ff !important; }
+	a:visited { color: /*[[hyperlink-color-visited]]*/ !important; }
+	div[class*='badge-link'] { display: none !important; } /* removes annoying reminders */
+}
